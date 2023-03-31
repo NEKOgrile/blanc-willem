@@ -17,7 +17,10 @@
     border-right: solid;
 }
 
+.table {
+    border-collapse: collapse;
 
+}
 
 
 .containeurnewrole {
@@ -48,62 +51,6 @@
     -o-transform: translateX(0);
 }
 
-.containeurnewrolemodif {
-    display: flex;
-    min-width: 99vw !important;
-    background-color: rgb(15, 0, 110);
-    min-height: 99vh;
-    position: fixed;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-    transform: translate(-150%);
-    transition: transform 0.5s ease-in-out;
-    -webkit-transform: translate(-150%);
-    -moz-transform: translate(-150%);
-    -ms-transform: translate(-150%);
-    -o-transform: translate(-150%);
-}
-
-.containeurnewrolemodif.active {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 120;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-}
-
-.containeurnewrolesupprimer {
-    display: flex;
-    min-width: 99vw !important;
-    background-color: rgb(15, 0, 110);
-    min-height: 99vh;
-    position: fixed;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-    transform: translate(-150%);
-    transition: transform 0.5s ease-in-out;
-    -webkit-transform: translate(-150%);
-    -moz-transform: translate(-150%);
-    -ms-transform: translate(-150%);
-    -o-transform: translate(-150%);
-}
-
-.containeurnewrolesupprimer.active {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 120;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-}
-
 .containeurelementnewrole {
     display: flex;
     flex-direction: column;
@@ -114,12 +61,6 @@
 
 .textprof {
     color: white;
-}
-
-.textprof2 {
-    color: rgb(251, 0, 0);
-    font-weight: bold;
-    font-size: 120%;
 }
 
 
@@ -142,25 +83,4 @@
     outline: none;
     margin: auto;
 
-}
-
-.tablerole {
-    border-collapse: collapse;
-
-}
-
-.buttonnewrole {
-    margin-top: 2vh;
-}
-
-
-.buttonmodifier {
-    display: none;
-}
-
-.hidden {
-    background-color: transparent;
-    color: transparent;
-    box-shadow: none;
-    border: none;
 }
