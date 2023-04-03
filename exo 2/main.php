@@ -10,6 +10,7 @@
 
 <body>
 
-</body>
 
+
+</body>
 <script type="text/javascript" src="main.js"></script>
