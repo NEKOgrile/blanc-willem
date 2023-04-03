@@ -20,7 +20,8 @@
         <input type="email" id="email" name="email"><br><br>
         <input type="submit" value="Submit">
     </form>
-    <input type="text" value="" id="textvide">
+    <div id="json-div"></div>
+
 
     <script>
         const form = document.querySelector('#myForm');
@@ -34,8 +35,13 @@
                 .then(response => response.text())
                 .then(data => {
                     console.log(data);
-                    var text = document.getElementById("textvide")
-                    text.value = data
+                    const json = JSON.parse(data);
+                    const jsonDiv = document.getElementById("json-div");
+                    jsonDiv.innerHTML = `
+        <p>Nom: ${json.nom}</p>
+        <p>Email: ${json.email}</p>
+        ${json.erreur ? `<p>Erreur: ${json.erreur}</p>` : ''}
+    `;
                 })
                 .catch(error => {
                     console.error(error);
