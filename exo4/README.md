@@ -13,4 +13,13 @@ En utilisant AJAX, lors de l'envoi des informations au serveur, le code devra v�
 
 En revanche, si l'adresse e-mail n'existe pas encore dans la base de données, elle sera ajoutée et un message de confirmation sera renvoyé, indiquant que l'utilisateur a bien été inscrit.
 
+tout cela travaillé en LOCAL grace à Wamps
+
+problem lier a Wamps car les 2 machines ne communiquer pas enssemble , j ai changé des paramatres dans les fichiers de wamps dans les .conf
+
+j ai ajouté les header dans le PHP pour acctepter le HTTP car il y avais un problem CORS
+
+j ai aidais le groupe des Rafael meme si je n ai pas eu de bon resultats
+
+
 Malheureusement, je n'ai pas eu le temps de réaliser la partie bonus du travail pratique car j'ai manqué de temps.
