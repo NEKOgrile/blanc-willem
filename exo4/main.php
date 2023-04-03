@@ -20,27 +20,29 @@
         <input type="email" id="email" name="email"><br><br>
         <input type="submit" value="Submit">
     </form>
+    <input type="text" value="" id="textvide">
 
     <script>
         const form = document.querySelector('#myForm');
         form.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(this);
-            fetch('ip/nomdossuier/main2.php', {
+            fetch('http://192.168.68.12/cours/git/exo3/blanc-willem/exo4/main2.php', {
                 method: 'POST',
                 body: formData
             })
                 .then(response => response.text())
                 .then(data => {
                     console.log(data);
+                    var text = document.getElementById("textvide")
+                    text.value = data
                 })
                 .catch(error => {
                     console.error(error);
                 });
         });
+
     </script>
 </body>
 
 </html>
-
-<script type="text/javascript" src="main.js"></script>
