@@ -1,7 +1,7 @@
 # controle
 
 Willem Cornil est le chef de projet en charge du serveur,
-tandis qu'Alice Marcaillou est en charge de l'assistance pour les clients.
+tandis qu'Alice Marcaillou est en charge de l'assistance pc clients.
 
 ---
 
