@@ -40,8 +40,7 @@
                     jsonDiv.innerHTML = `
         <p>Nom: ${json.nom}</p>
         <p>Email: ${json.email}</p>
-        ${json.erreur ? `<p>Erreur: ${json.erreur}</p>` : ''}
-    `;
+        ${json.info ? `<p>info: ${json.info}</p>` : ''}`;
                 })
                 .catch(error => {
                     console.error(error);

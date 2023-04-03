@@ -17,14 +17,16 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
     $mailexist = $mail->rowCount();
 
     if ($mailexist != 0) {
-        $reponseexiste = array("nom" => $name, "email" => $email, "erreur" => "l email existe deja");
+        $reponseexiste = array("nom" => $name, "email" => $email, "info" => "l email existe deja");
         echo ($json = json_encode($reponseexiste));
     } else {
         $registernewpp = $bdd->prepare(
             'INSERT INTO ajax (nom , email) VALUE (?,?)'
         );
         $registernewpp->execute(array($name, $email));
-        echo json_encode("ok");
+
+        $reponse = array("nom" => $name, "email" => $email, "info" => "l'email a bien etais integré");
+        echo ($json = json_encode($reponse));
     }
 
 }
